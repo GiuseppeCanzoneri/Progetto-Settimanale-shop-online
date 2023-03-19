@@ -1,59 +1,132 @@
 <!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>negozio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page-Nike</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#">🛍️CRUDAZON</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto d-flex flex-grow-1 mb-2 mb-lg-0">
-            <li class="nav-item me-auto">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./backoffice.html">Backoffice</a>
-            </li>
-          </ul>
+<body class="bg-image" style="background-image: url('https://c.static-nike.com/a/images/w_1920,c_limit/mdbgldn6yg1gg88jomci/image.jpg');">
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand text-warning fs-5 d-flex align-items-center" href="./index.html"><img src="https://www.stickersmurali.com/it/img/asfs360-jpg/folder/products-listado-merchanthover/adesivi-nike-logo.jpg" style="width: 50px; height: 40px;" alt=""><span class="px-3 fs-3 text-white  text-bg-white fw-bold">Nike </span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto d-flex align-items-center flex-grow-1 mb-2 mb-lg-0">
+                        <li class="nav-item me-auto">
+                            <a class="nav-link active text-white text-bg-danger  rounded-3 fs-5" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-bg-danger rounded-3 fs-5" href="./backoffice.html">Backoffice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid" style="background-image: url('https://www.shutterstock.com/image-photo/faint-wispy-smoke-swirls-lightly-260nw-2153615903.jpg') ;background-repeat: no-repeat; background-size: cover; height: 300px; ">
+            <div class="container">
+                <p class="lead mt-5 fs-1 text-center">La nuova era di Air Max</p>
+              <h1 class="display-4 fs-1 fw-bold text-center">EVERYTHING TO THE MAX</h1>
+              <p class="lead fs-4 text-center">Air Max: uno spirito autentico per esprimere la tua personalità con coraggio, far sentire la tua voce e mostrare al mondo chi sei davvero.</p>
+              <div class="text-center">
+              <a class="btn btn-danger text-white rounded-5 btn-lg " href="#sconti" role="button">Acquista ora</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-8">
-          <h2 class="display-4">Negozio Online</h2>
-          <ul id="telephone-list" class="list-group"></ul>
+        <h3 class="text-white text-center fw-bold mt-5 fs-1 text-bg-danger" id="sconti">SALDI</h3>
+        <div class="container mt-5">
+            <div class="row" id="rowMain">
+                <h2 class="display-4 mb-3 fw-bold text-uppercase  text-white text-bg-dark  px-4 fs-2">Wait</h2>
+                <div id="product" class="d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="text-white  text-bg-danger  fs-3 mb-4">Loading </h4>
+                    <div class="spinner-border text-white fs-4 " role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+            </div>
         </div>
-      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="js/index.js"></script>
-  </body>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        const BASE_URL = "https://striveschool-api.herokuapp.com/api/product/"
+        const BASE_OPT = {
+                headers: {
+                    Authorization: " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE2MjA5NTE3N2Y3MDAwMTNjNWViYzkiLCJpYXQiOjE2NzkxNzE3MzQsImV4cCI6MTY4MDM4MTMzNH0.yqJU7YSKnM4jAALwChB9NhV465b1pE005tJJLsar9es"
+                }
+            }
+
+        const fetchMain = async () => {
+            console.log("before")
+
+
+        try{
+            const resp = await fetch("https://striveschool-api.herokuapp.com/api/product/", BASE_OPT)
+            
+            if (resp.status === 400) throw new Error("Request Error, wrong execution (400)")
+            if (resp.status === 401) throw new Error("You are unauthorized to access the requested resource. Please log in (401)")
+            if (resp.status === 403) throw new Error("Your account is not authorized to access the requested resource (403)")
+            if (resp.status === 404) throw new Error("We could not find the resource you requested. Please refer to the documentation for the list of resources (404)")
+            if (resp.status === 500) throw new Error("Unexpected internal server error (500)")
+            if (resp.status === 501) throw new Error("The requested resource is recognized but not implemented (501)")
+            if (resp.status === 502) throw new Error("Invalid response received when acting as a proxy or gateway. (502)")
+            if (resp.status === 503) throw new Error("The server is currently unavailable (503)")
+            if (resp.status === 504) throw new Error("Did not receive a timely response from upstream server while acting as a gateway or proxy (504)")
+
+            if (!resp.ok) throw new Error("Fetch Error")
+
+            const product = await resp.json()
+
+            const row = document.getElementById("rowMain")
+            row.innerHTML = ""
+
+            for (const card of product){
+            const { brand, description, imageUrl, name, price, _id } = card;
+            const col = document.createElement("div");
+            col.className = "col-3 mt-5";
+            col.innerHTML = `
+            <div class="row">
+            <div class="col-3">
+            <div class="card mt-5" style="width: 300px; height: 400px;">
+            <img src="${imageUrl}" class="card-img-top p-0" alt="...">
+            <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase text-white text-bg-dark rounded-5 px-4 fs-4 ">${name}</h5>
+            <p class="card-text text-white text-bg-dark rounded-3 px-4 fs-5">${brand}</p>
+            <p class="card-text fw-bold text-uppercase mb-4  text-white text-bg-dark rounded-3">${description}</p>
+            <p class="card-text text-bg-warning rounded-3 px-5 fs-3">${price} $</p>
+            <a class="card-text text-bg-warning text-dark rounded-3 px-5 fs-3 text-decoration-none" href="./details.html?_id=${_id}">Dettagli</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            `
+   
+            row.appendChild(col)
+            }
+
+        } catch (err) {
+            alert("Errore Catch" + err.message)
+
+        } 
+    }
+
+    window.onload = async () => {
+        fetchMain()
+        console.log("last")
+    }
+    </script>    
+</body>
 </html>
